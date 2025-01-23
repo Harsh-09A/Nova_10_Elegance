@@ -29,6 +29,7 @@ html {
   --colorBackgroundOverlay: #00000070;
   --colorWhiteOverlay: rgba(212, 210, 212, 1);
   --colorBorderWhite: #dbe4e9;
+  --themeBlack: #0e0503;
 }
 /* Navbar Starts */
 header {
@@ -42,19 +43,19 @@ header {
 }
 
 .navbar-nav .nav-link {
-  color: var(--colorBlack);
+  color: var(--colorWhite);
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
   background-color: var(--colorPrimary);
   height: 100%;
-  color: var(--colorWhite);
+  color: var(--colorSecondary);
 }
 
 .nav-link:hover {
   background-color: var(--colorPrimary);
-  color: var(--colorWhite);
+  color: var(--colorSecondary);
 }
 
 .nav-icon {
@@ -75,13 +76,13 @@ header {
 /* Navbar Ends */
 
 main {
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 /* Slider */
 .carousel {
   overflow: hidden !important;
-  max-height: calc(100vh - 80px);
+  max-height: calc(100vh - 70px);
 }
 
 .carousel-indicators .active {
@@ -90,13 +91,13 @@ main {
 
 @media screen and (max-width: 600px) {
   .carousel-item .banner0 {
-    content: url("../img/banners/mobile_banner0.jpg");
+    content: url("../img/banners/m3.webp");
   }
   .carousel-item .banner1 {
-    content: url("../img/banners/mobile_banner1.jpg");
+    content: url("../img/banners/m2.webp");
   }
   .carousel-item .banner2 {
-    content: url("../img/banners/mobile_banner2.jpg");
+    content: url("../img/banners/m1.webp");
   }
 }
 
@@ -178,10 +179,15 @@ main {
 
 .offer-text {
   display: block;
-  font-size: 1.1em !important;
+  font-size: 1.2em !important;
   color: var(--colorWhite);
   border: 2px dashed var(--colorWhite);
   padding: 10px 5px;
+  text-align: left;
+}
+.offer-text ul li:hover {
+  scale: 1.05;
+  cursor: pointer;
 }
 
 /* Tagline & Price */
@@ -255,6 +261,9 @@ main {
     padding: 0;
     margin: 0;
   }
+  .info-box {
+    display: none;
+  }
 }
 
 .image-design {
@@ -262,8 +271,16 @@ main {
 }
 
 /* Overview */
+#overview_section {
+  background: #000;
+}
+
 #overview_section .sub-heading {
   color: var(--colorBlack);
+}
+
+#overview_section .text-theme-color {
+  color: var(--colorSecondary);
 }
 /* .overview_img {
   height: 400px;
@@ -282,6 +299,7 @@ main {
 }
 
 .overview_para {
+  font-size: 1.1em;
   text-align: justify;
 }
 /* Highlights */
@@ -291,7 +309,7 @@ main {
   height: 70px;
   background: #ffffff;
   padding: 50px 0px;
-  background-color: var(--colorSecondary);
+  background-color: var(--themeBlack);
   /* background-color: #253860; */
   display: flex;
   align-items: center;
@@ -513,9 +531,10 @@ figure.fig_img.hover h3 {
 
 /* About */
 #about_section {
-  background-color: #00354a;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-color: #00354a; */
+  background: url(../img/backgrounds/ftbg.jpg);
+  background-repeat: repeat;
+  /* background-size: cover; */
   /* height: 970px; */
   background-attachment: fixed;
   padding: 0 !important;

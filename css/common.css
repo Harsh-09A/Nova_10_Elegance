@@ -80,13 +80,14 @@
 }
 
 .download_btn {
-  color: var(--colorPrimary);
-  border-color: var(--colorPrimary);
+  color: var(--colorSecondary);
+  border-color: var(--colorSecondary);
 }
 .download_btn:hover,
 .download_btn:active {
-  border-color: var(--colorPrimary) !important;
-  background-color: var(--colorPrimary) !important;
+  border-color: var(--colorBlack) !important;
+  background-color: var(--colorWhite) !important;
+  color: var(--colorBlack);
 }
 
 /* ----------------------------------------------------------- */
