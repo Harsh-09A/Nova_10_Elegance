@@ -13,7 +13,7 @@
     <meta name="robots" content="index, follow" />
 
     <!-- Favicon -->
-    <link rel="icon" href="img/logo/favicon.jpg" sizes="16x16" />
+    <link rel="icon" href="img/logo/favicon.png" sizes="16x16" />
 
     <!-- Prefetch -->
     <link rel="prefetch" href="https://cdn.jsdelivr.net" crossorigin />
@@ -36,6 +36,12 @@
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"></script>
 
     <!-- Font Awesome CDN -->
@@ -81,7 +87,7 @@
     <header class="fixed-top shadow-sm">
       <nav
         class="navbar navbar-expand-lg mx-auto"
-        style="background-color: #ffffff"
+        style="background-color: #161012"
         id="main-navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
@@ -89,7 +95,7 @@
               id="logo"
               src="img/logo/logo.png"
               alt="Logo"
-              height="60px"
+              height="80px"
               style="padding-left: 10%" />
           </a>
           <button
@@ -199,31 +205,30 @@
               <li>
                 Project Registered under Government of India RERA Act 2016
               </li>
-              <li>RERA Registration No - P52000078523</li>
-              <!--<li>MAHA RERA Project Registration No.: </li>-->
+              <li>RERA Project Registration No:- P52000078523</li>
               <li>
-                <b>Site Address:</b> Survey No 80/1 & 80/2, Next to Sri Sathya
-                Sai Sanjeevani Hospital, Near Amandoot Metro Station, Rohinjan,
-                Kharghar, Navi Mumbai - 410 208.
+                Government RERA Authorised Advertiser's:- Reliaable Property
+                Registration
               </li>
-              <!-- <li>
-                  <b>Contact Us:</b> Corporate Office: 409,The Landmark, Plot No
-                  26A, Sector - 7, Near Hiranandani, Kharghar, Navi Mumbai –
-                  410210.
-                </li> -->
+              <li>RERA Agent Registration No:- A51700008112</li>
+              <li>
+                <b>Site Address:</b> Nova 10 Elegance, Sector 37, Kharghar, Navi
+                Mumbai, Maharashtra 410210
+              </li>
             </ul>
           </small>
         </div>
         <div>
           <div>
             <span>
-              Disclaimer : The information provided on this website is intended
-              exclusively for informational purposes. This Website Is Not An
-              Official Site And It Belongs To The Authorized Marketing Partner.
-              All rights reserved. The content, design, and information on this
-              website are protected by copyright and other intellectual property
-              rights. Any unauthorized use or reproduction of the content may
-              violate applicable laws.
+              Disclaimer : This website is managed by Reliaable Property. Our
+              Rera No. is A51700008112. We are an authorised marketing partner
+              for this project. Provided content is given by respective owners
+              and this website and content is for information purpose only and
+              it does not constitute any offer to avail for any services. Prices
+              mentioned are subject to change without prior notice and
+              properties mentioned are subject to availability. You can expect a
+              call, SMS or emails on details registered with us.
             </span>
             <span id="dots20" style="display: inline"></span>
             <span id="more20" style="display: none">
@@ -241,6 +246,13 @@
               id="myBtn20">
               Read More
             </span>
+          </div>
+
+          <div>
+            <p>
+              <strong>Contact Us at:</strong> Manomay CHS, Sector 35D, Kharghar,
+              Navi Mumbai - 410210.
+            </p>
           </div>
 
           <p class="pb-4 pt-2">
@@ -261,21 +273,22 @@
         </div>
       </div>
     </footer>
+
     <!-- Mobile Footer Fixed Button -->
     <div class="container-fluid fixed-bottom action-footer-container">
       <ul class="nav nav-fill action-footer">
-        <li class="nav-item ps-1">
-          <a
-            onclick="return gtag_report_conversion('https://wa.me/+91123456789 ');"
-            href="https://wa.me/+91123456789 "
-            class="text-decoration-none text-white">
-            <i class="fa-brands fa-whatsapp nav-icon"> </i> Whatsapp
+        <li
+          class="nav-item ps-1"
+          data-bs-toggle="modal"
+          data-bs-target="#popupModal">
+          <a class="text-decoration-none text-white">
+            <i class="fa-solid fa-taxi nav-icon"> </i> Site Visit
           </a>
         </li>
         <li class="nav-item ps-1">
           <a
-            onclick="return gtag_report_conversion('tel:+91123456789 ');"
-            href="tel:+91123456789 "
+            onclick="return gtag_report_conversion('tel:+919702396010');"
+            href="tel:+919702396010"
             class="text-decoration-none text-white">
             <i class="fa-solid fa-phone me-2"></i> Call Us
           </a>
@@ -312,7 +325,7 @@
           <!-- Modal Body -->
           <div class="modal-body">
             <div class="container text-center">
-              <img src="img/logo/logo.png" alt="" height="80px" />
+              <img src="img/logo/image.png" alt="" height="80px" />
               <p class="mt-2">Register Here And Avail The Best Offers!!</p>
             </div>
             <div class="container">
@@ -414,11 +427,5 @@
         </div>
       </div>
     </div>
-
-    <!-- Jquery -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"></script>
   </body>
 </html>
