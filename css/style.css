@@ -72,6 +72,9 @@ header {
     height: 45px;
   }
 }
+.navbar-toggler-icon {
+  background-image: url("../img/logo/menu_icon.svg") !important;
+}
 
 /* Navbar Ends */
 
@@ -98,12 +101,6 @@ main {
   }
   .carousel-item .banner2 {
     content: url("../img/banners/m1.webp");
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .carousel-control-prev {
-    display: none;
   }
 }
 
