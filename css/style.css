@@ -76,6 +76,11 @@ header {
   background-image: url("../img/logo/menu_icon.svg") !important;
 }
 
+@media screen and (min-width: 1000px) {
+  .mobileview {
+    display: none;
+  }
+}
 /* Navbar Ends */
 
 main {
@@ -554,4 +559,7 @@ figure.fig_img.hover h3 {
   width: fit-content;
   padding-left: 10px;
   color: var(--colorWhite);
+}
+img.img-fluid.p-2.scale-up-center {
+  height: 50px !important;
 }
