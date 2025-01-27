@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nova 10 Elegance</title>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16840471525"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-16840471525");
+    </script>
+
+    <!-- Event snippet for Submit Lead Form - NOVA 10 conversion page -->
+    <script>
+      gtag("event", "conversion", {
+        send_to: "AW-16840471525/NSPFCLjbzZUaEOXnlN4-",
+      });
+    </script>
 
     <!-- SEO -->
     <meta property="og:title" content="Nova 10 Elegance" />
@@ -303,14 +322,22 @@
             <i class="fa-solid fa-taxi nav-icon"> </i> Site Visit
           </a>
         </li>
-        <li class="nav-item ps-1">
+        <li
+          class="nav-item ps-1"
+          data-bs-toggle="modal"
+          data-bs-target="#popupModal">
+          <a class="text-decoration-none text-white">
+            <i class="fa-solid fa-phone nav-icon"> </i> Call Back
+          </a>
+        </li>
+        <!-- <li class="nav-item ps-1">
           <a
             onclick="return gtag_report_conversion('tel:+919702396010');"
             href="tel:+919702396010"
             class="text-decoration-none text-white">
             <i class="fa-solid fa-phone me-2"></i> Call Us
           </a>
-        </li>
+        </li> -->
 
         <li
           class="nav-item"

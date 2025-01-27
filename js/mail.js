@@ -33,7 +33,7 @@ const handleFormSubmit = async (
     privacy_check: document.getElementById(privacyField).value,
     ip_address: await getIpAddress(),
     website_url: window.location.href,
-    to_email: "paradise_group@hotmail.com",
+    to_email: "reliaableproperty@hotmail.com",
     company_name: "Nova 10 Elegance",
   };
 
